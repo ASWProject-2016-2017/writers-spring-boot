@@ -10,3 +10,7 @@ Questo progetto contiene l'applicazione realizzata per il corso di Architetture 
 * **springboot-writers** è un servizio per la generazione di informazioni casuali sugli scrittori, che accede i servizi di **springboot-productions** e **springboot-masterpieces**
 * **springboot-productions** è un servizio per la generazione di informazioni casuali sul numero di opere realizzate da uno scrittore utilizzato dal servizio **springboot-writers**
 * **springboot-productions** è un servizio per la generazione di informazioni casuali per il quale un certo scrittore è famoso utilizzato dal servizio **springboot-writers**
+
+## Esecuzione
+Per compilare ed eseguire l'applicazione posizionarsi in ogni cartella del singolo servizio ed eseguire il comando:
+`gradle bootRun` 
