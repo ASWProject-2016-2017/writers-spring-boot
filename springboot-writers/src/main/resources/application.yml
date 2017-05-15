@@ -1,7 +1,7 @@
 spring:
     application:
         name: writer
-masterpiece: http://localhost:8081
+masterpiece: http://localhost:8081/masterpieces
 production:
   uri: http://localhost:8082
   path: /productions
