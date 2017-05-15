@@ -11,7 +11,7 @@ public class MasterpieceController {
     @Value("${masterpieces}")
     private String masterpieces;
     private final Logger logger = Logger.getLogger("asw.springboot.masterpieces");
-    @RequestMapping("/")
+    @RequestMapping("/masterpieces")
     public String getMasterpieces() {
         String[] masterpiecesArray = masterpieces.split(",");
         int position = (int) (Math.round(Math.random()*(masterpiecesArray.length-1)));
