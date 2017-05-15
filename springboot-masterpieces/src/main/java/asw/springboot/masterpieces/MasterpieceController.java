@@ -8,6 +8,7 @@ import java.util.logging.Logger;
 
 @RestController
 public class MasterpieceController {
+
     @Value("${masterpieces}")
     private String masterpieces;
     private final Logger logger = Logger.getLogger("asw.springboot.masterpieces");
