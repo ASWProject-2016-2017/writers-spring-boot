@@ -4,4 +4,4 @@
 
 echo Running PRODUCTIONS
 gradle build
-java -Xms64m -Xmx128m -jar build/libs/springboot-productions-0.0.1-SNAPSHOT.jar
+java -Xms64m -Xmx128m -jar build/libs/productions-0.0.1-SNAPSHOT.jar

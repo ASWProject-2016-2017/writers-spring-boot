@@ -1,10 +1,12 @@
 spring:
     application:
         name: writer
-masterpiece: http://localhost:8081/masterpieces
+masterpiece:
+ uri: http://localhost:8081
+ path: /masterpieces
 production:
-  uri: http://localhost:8082
-  path: /productions
+ uri: http://localhost:8082
+ path: /productions
 server: 
   port: 8080
 
