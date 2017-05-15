@@ -13,16 +13,18 @@ import java.util.logging.Logger;
 public class MasterpieceController {
     private final Logger logger = Logger.getLogger("asw.springboot.writers");
 
+    @Value("${production.uri}")
+    private String productionUri;
     @Value("${masterpiece}")
     private String masterpiecetUri;
 
-    @Value("${production}")
-    private String productionUri;
+    @Value("${production.path}")
+    private String productionPath;
 
     @RequestMapping("/writer/{name}")
     public String getWriter(@PathVariable String name) {
         String writer = "Lo scrittore" + " " + name.substring(0,1).toUpperCase() + name.substring(1) + " è famoso per "+ getMasterpiecetUri() +
-        " e nella sua vita ha realizzato " + getProductionUri() + " opere." ;
+        " e nella sua vita ha realizzato " + getProductionByName(name) + " opere." ;
         logger.info("getWriter(): " + writer);
         return writer;
     }
@@ -33,8 +35,9 @@ public class MasterpieceController {
         return getWord(masterpiecetUri);
     }
 
-    public String getProductionUri() {
-        return getWord(productionUri);
-    } 
+    public String getProductionByName(String name) {
+
+        return new RestTemplate().getForObject(productionUri+productionPath+"/{name}",String.class,name);
+    }
 }
 

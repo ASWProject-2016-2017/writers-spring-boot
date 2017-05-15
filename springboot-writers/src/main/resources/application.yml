@@ -2,7 +2,9 @@ spring:
     application:
         name: writer
 masterpiece: http://localhost:8081
-production: http://localhost:8082
+production:
+  uri: http://localhost:8082
+  path: /productions
 server: 
   port: 8080
 
