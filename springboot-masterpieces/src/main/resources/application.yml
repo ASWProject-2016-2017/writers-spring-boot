@@ -5,4 +5,4 @@ spring:
     name: masterpieces
 server:
   port: 8081
-masterpieces: Divina Commedia,Il fu Mattia Pascal,Cime tempestose,La coscienza di Zeno, La sonata a Kreutzer, Jurassic Park
+masterpieces: Divina Commedia,Il fu Mattia Pascal,Cime tempestose,La coscienza di Zeno, La sonata a Kreutzer, Jurassic Park, 10 piccoli indiani
