@@ -22,7 +22,7 @@ famoso e informazioni sul numero (casuale) di libri che ha realizzato dalla sua 
 
 Ad esempio,
 * la richiesta `/writer/pirandello/1802` potrebbe restituire “Pirandello è famoso per il libro Il fu
-Mattia Pascal e nel 1802 ha scritto due libri”
+Mattia Pascal e nel 1802 ha scritto 2 libri”
 
 * la richiesta `/writer/pirandello` potrebbe restituire “Pirandello è famoso per il libro Il fu Mattia Pascal e dalla sua nascita ha scritto 20 libri”
 
