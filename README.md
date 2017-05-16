@@ -48,5 +48,7 @@ Ad esempio,
 Il servizio `writer` risponde al suo client usufruendo dei servizi `masterpieces` e `productions` e integrando le loro risposte.
 
 ## Esecuzione
-Per compilare ed eseguire l'applicazione posizionarsi in ogni cartella del singolo servizio ed eseguire il comando:
-`gradle bootRun` 
+Per compilare ed eseguire l'applicazione fare quanto segue, in terminali diversi:
+* posizionarsi nella cartella springboot-writers ed eseguire lo script `./run-writers.sh` 
+* posizionarsi nella cartella springboot-masterpieces ed eseguire lo script `./run-masterpieces.sh` 
+* posizionarsi nella cartella springboot-productions ed eseguire lo script `./run-productions.sh` 
