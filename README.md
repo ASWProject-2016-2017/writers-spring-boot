@@ -26,10 +26,10 @@ Mattia Pascal e nel 1802 ha scritto 2 libri”
 
 * la richiesta `/writer/pirandello` potrebbe restituire “Pirandello è famoso per il libro Il fu Mattia Pascal e dalla sua nascita ha scritto 20 libri”
 
-Il servizio `writer` è implementato come client di due servizi secondari `masterpices` e `productions`, con le caratteristiche
+Il servizio `writer` è implementato come client di due servizi secondari `masterpieces` e `productions`, con le caratteristiche
 descritte nel seguito.
 
-Il servizio `masterpices` fornisce un’operazione:
+Il servizio `masterpieces` fornisce un’operazione:
 * `masterpieces/<scrittore>` restituisce un motivo (casuale) per cui un certo `<scrittore>` è famoso
 
 Ad esempio,
