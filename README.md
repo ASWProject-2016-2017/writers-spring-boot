@@ -37,7 +37,7 @@ Ad esempio,
 
 Inoltre, il servizio `productions` fornisce due operazioni:
 
-* productions/`<scrittore>/<anno>` restituisce il numero (casuale) di libri che un certo `<scrittore>` ha
+* `productions/<scrittore>/<anno>` restituisce il numero (casuale) di libri che un certo `<scrittore>` ha
 realizzato in quel determinato `<anno>`
 * `productions/<scrittore>` restituisce il numero di libri (casuale) che un certo `<scrittore>` ha realizzato nel complessivo
 
