@@ -1,7 +1,6 @@
 .gradle
 /build/
 !gradle/wrapper/gradle-wrapper.jar
-*nohup.out*
 
 ### STS ###
 .apt_generated
@@ -25,4 +24,5 @@ dist/
 nbdist/
 .nb-gradle/
 .DS_Store
-/project/swarm.inf.uniroma3.it/resources/certs/ciao.txt
+### PEC ###
+/project/swarm.inf.uniroma3.it/resources/certs/*.pec
