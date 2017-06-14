@@ -19,7 +19,7 @@ jar {
 	version = '0.0.1-SNAPSHOT'
 }
 
-sourceCompatibility = 1.7
+sourceCompatibility = 1.8
 
 repositories {
 	mavenCentral()
@@ -28,5 +28,11 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.springframework.cloud:spring-cloud-starter')
+	compile('org.springframework.cloud:spring-cloud-starter-eureka')
+	compile('org.springframework.cloud:spring-cloud-starter-ribbon')
+	compile('org.springframework.cloud:spring-cloud-starter-feign')
+	compile('org.springframework.cloud:spring-cloud-starter-hystrix')
+//	compile('org.springframework.cloud:spring-cloud-starter-zuul')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
