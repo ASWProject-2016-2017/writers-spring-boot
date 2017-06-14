@@ -5,50 +5,62 @@
 * Federico Yusteenappar
 * Giuseppe D'Acunzo
 
-## writers-spring-boot
-Questo progetto contiene l'applicazione realizzata per il corso di Architetture dei Sistemi Software A.A 2016/2017 :
-* **springboot-writers** è un servizio per la generazione di informazioni casuali sugli scrittori, che accede i servizi di **springboot-productions** e **springboot-masterpieces**
-* **springboot-productions** è un servizio per la generazione di informazioni casuali sul numero di opere realizzate da uno scrittore utilizzato dal servizio **springboot-writers**
-* **springboot-masterpieces** è un servizio per la generazione di informazioni casuali per il quale un certo scrittore è famoso utilizzato dal servizio **springboot-writers**
+Questo repository contiene il codice del *progetto di Architetture dei sistemi Software (2016/2017)* 
+basato su una semplice *applicazione software distribuita* 
+(basato sull'uso di *middleware*), 
+che va eseguito in degli opportuni *ambienti distribuiti*: 
+* il software è scritto in [Java](http://www.oracle.com/technetwork/java/index.html), 
+  e costruito con [Gradle](http://gradle.org/); 
+* ciascun ambiente di esecuzione distribuito è composto 
+  da una o più macchine virtuali create con 
+  [VirtualBox](https://www.virtualbox.org/)
+  e [Vagrant](https://www.vagrantup.com/), 
+  e accedute tramite [Git](https://git-scm.com/); 
+* inoltre, alcuni ambienti di esecuzione  
+  sono basati su contenitori 
+  [Docker](https://www.docker.com/). 
 
-## Descrizione del dominio applicativo
-Il servizio principale `writer` fornisce informazioni (casuali) sugli scrittori
-Il servizio writer fornisce due operazioni:
-* `/writer/<scrittore>/<anno>` restituisce informazioni (casuali) per il quale un certo `<scrittore>` è
-famoso e informazioni sul numero di libri che ha realizzato in quel particolare `<anno>`
+## Software da installare sul proprio PC 
 
-* `/writer/<scrittore>` restituisce invece informazioni (casuali) per il quale un certo `<scrittore>` è
-famoso e informazioni sul numero (casuale) di libri che ha realizzato dalla sua nascita.
+### Per lo sviluppo del software 
 
-Ad esempio,
-* la richiesta `/writer/pirandello/1802` potrebbe restituire “Pirandello è famoso per il libro Il fu
-Mattia Pascal e nel 1802 ha scritto 2 libri”
+* [Java SDK](http://www.oracle.com/technetwork/java/javase/) 
+* [Gradle](http://gradle.org/) 
+* [Git](https://git-scm.com/) 
 
-* la richiesta `/writer/pirandello` potrebbe restituire “Pirandello è famoso per il libro Il fu Mattia Pascal e dalla sua nascita ha scritto 20 libri”
+### Per la gestione degli ambienti di esecuzione  
 
-Il servizio `writer` è implementato come client di due servizi secondari `masterpieces` e `productions`, con le caratteristiche
-descritte nel seguito.
+* [VirtualBox](https://www.virtualbox.org/)
+* [Vagrant](https://www.vagrantup.com/) 
+* [Git](https://git-scm.com/) 
 
-Il servizio `masterpieces` fornisce un’operazione:
-* `masterpieces/<scrittore>` restituisce un motivo (casuale) per cui un certo `<scrittore>` è famoso
+[Docker](https://www.docker.com/) non è invece necessario, 
+poichè può essere eseguito nelle macchine virtuali. 
 
-Ad esempio,
-* la richiesta `/masterpieces/dante` potrebbe restituire “La Divina Commedia”
+## Organizzazione del repository 
 
-Inoltre, il servizio `productions` fornisce due operazioni:
+Questo repository è organizzato in diverse sezioni (cartelle): 
+* [projects](projects/) contiene il codice della *applicazione distribuita*, 
+  con una sottosezione (sottocartella) per ciascuno degli argomenti del corso; 
+* [environments](environments/) contiene il codice per la gestione degli *ambienti distribuiti*, 
+  con una sottosezione (sottocartella) per ciascuno degli ambienti distribuiti 
+  su cui poter eseguire la applicazione distribuita sviluppata. 
 
-* `productions/<scrittore>/<anno>` restituisce il numero (casuale) di libri che un certo `<scrittore>` ha
-realizzato in quel determinato `<anno>`
-* `productions/<scrittore>` restituisce il numero di libri (casuale) che un certo `<scrittore>` ha realizzato nel complessivo
+Queste due sezioni non sono indipendenti, ma correlate (in modo non banale). 
 
-Ad esempio,
-* la richiesta `/productions/pirandello/1906` potrebbe restituire “ 3”
-* la richiesta `/productions/dante` potrebbe restituire “19”
 
-Il servizio `writer` risponde al suo client usufruendo dei servizi `masterpieces` e `productions` e integrando le loro risposte.
+## Accesso al repository 
 
-## Esecuzione
-Per compilare ed eseguire l'applicazione fare quanto segue, in terminali diversi:
-* posizionarsi nella cartella springboot-writers ed eseguire lo script `./run-writers.sh` 
-* posizionarsi nella cartella springboot-masterpieces ed eseguire lo script `./run-masterpieces.sh` 
-* posizionarsi nella cartella springboot-productions ed eseguire lo script `./run-productions.sh` 
+Per effettuare il download del repository, usare il seguente comando Git 
+dalla cartella locale in cui si vuole scaricare il repository: 
+
+    git clone https://github.com/ASWProject-2016-2017/writers-spring-boot.git
+
+Oppure (se il sistema host è Windows): 
+
+    git clone --config core.autocrlf=input https://github.com/ASWProject-2016-2017/writers-spring-boot.git
+
+Per aggiornare il contenuto della propria copia locale del repository, 
+usare il seguente comando Git dalla cartella locale in cui è stato scaricato il repository: 
+
+    git pull 

@@ -27,7 +27,7 @@ nbdist/
 .DS_Store
 
 ### PEC ###
-/project/swarm.inf.uniroma3.it/resources/certs/*.pec
+/project/swarm.inf.uniroma3.it/resources/certs/*.pem
 
 ### Vagrant ###
 /enviroments/developer/.vagrant/

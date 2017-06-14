@@ -1,0 +1,19 @@
+# application.yml
+---
+spring:
+  application:
+    name: masterpiece
+eureka: 
+  client: 
+    serviceUrl: 
+      defaultZone: http://eureka:8761/eureka/
+# leave eureka.instance.leaseRenewalIntervalInSeconds unchanged in production
+# just here to provide quicker updates to Eureka for demos
+  instance: 
+    leaseRenewalIntervalInSeconds: 5
+    metadataMap: 
+      instanceId: ${spring.application.name}:${random.value}
+server: 
+#  port: ${PORT:${SERVER_PORT:0}}
+  port: 8080
+masterpiece: Divina Commedia,Il fu Mattia Pascal,Cime tempestose,La coscienza di Zeno, La sonata a Kreutzer, Jurassic Park, 10 piccoli indiani
