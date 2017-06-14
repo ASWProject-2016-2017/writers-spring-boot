@@ -1,6 +1,6 @@
 spring:
     application:
-        name: writers
+        name: writer
 eureka: 
   client: 
     serviceUrl: 
