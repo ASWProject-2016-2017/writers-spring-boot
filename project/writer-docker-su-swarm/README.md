@@ -44,7 +44,7 @@ Ad esempio,
 Il servizio `writer` risponde al suo client usufruendo dei servizi `masterpiece` e `production` e integrando le loro risposte.
 
 ## Esecuzione
-Le seguenti istruzioni che seguono vanno intese come esempio, e non come istruzioni da eseguire direttamente
+Le istruzioni che seguono vanno intese come esempio, e non come istruzioni da eseguire direttamente
 
 Istruzioni per il rilascio dell'applicazione **writer** su **swarm.inf.uniroma3.it** 
 (operazioni da eseguire dalla cartella *writer-docker-su-swarm*): 
