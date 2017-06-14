@@ -40,8 +40,7 @@ poichè può essere eseguito nelle macchine virtuali.
 ## Organizzazione del repository 
 
 Questo repository è organizzato in diverse sezioni (cartelle): 
-* [projects](projects/) contiene il codice della *applicazione distribuita*, 
-  con una sottosezione (sottocartella) per ciascuno degli argomenti del corso; 
+* [projects](projects/) contiene il codice della *applicazione distribuita*;
 * [environments](environments/) contiene il codice per la gestione degli *ambienti distribuiti*, 
   con una sottosezione (sottocartella) per ciascuno degli ambienti distribuiti 
   su cui poter eseguire la applicazione distribuita sviluppata. 
