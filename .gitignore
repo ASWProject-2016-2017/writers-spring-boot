@@ -32,3 +32,4 @@ nbdist/
 ### Vagrant ###
 /enviroments/developer/.vagrant/
 /enviroments/docker/.vagrant/
+/enviroments/shared/downloads/

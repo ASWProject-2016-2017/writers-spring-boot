@@ -14,7 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # config.vm.box_url = "http://files.vagrantup.com/ubuntu/trusty64.box"
 
     # folder per i progetti Asw (/home/vagrant/projects)
-    config.vm.synced_folder "../../projects/", "/home/vagrant/projects", :mount_options => ["dmode=777", "fmode=777"]
+    config.vm.synced_folder "../../project/", "/home/vagrant/projects", :mount_options => ["dmode=777", "fmode=777"]
 
     # folder per le risorse condivise per gli ambienti Asw (/home/vagrant/shared/resources e /home/vagrant/shared/scripts) 
     config.vm.synced_folder "../shared/", "/home/vagrant/shared", :mount_options => ["dmode=777", "fmode=777"]
