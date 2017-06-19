@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient("production")
 public interface ProductionClient {
 
-	@RequestMapping(value="/production/{author}", method=RequestMethod.GET)
+	@RequestMapping(value="/{author}", method=RequestMethod.GET)
 	public String getProductionByName(@PathVariable(value= "author") String author);
 	
-	@RequestMapping(value="/production/{author}/{year}", method=RequestMethod.GET)
+	@RequestMapping(value="/{author}/{year}", method=RequestMethod.GET)
 	public String getProductionByNameAndYear(@PathVariable(value="author") String author,@PathVariable(value = "year") int year);
 
 }

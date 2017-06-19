@@ -15,7 +15,7 @@ public class ProductionController {
 
     private final Logger logger = Logger.getLogger("asw.springboot.productions");
 
-    @RequestMapping("/production/{name}/{year}")
+    @RequestMapping("/{name}/{year}")
     public String getPubblicationsByNameAndYear(@PathVariable String name, @PathVariable int year) {
         String production = getRandomNumber();
         logger.info("getPubblicationsByNameAndYear("+name+" "+year+"): " + production);
@@ -23,7 +23,7 @@ public class ProductionController {
         return production;
     }
 
-    @RequestMapping("/production/{name}")
+    @RequestMapping("/{name}")
     public String getPubblicationsByName(@PathVariable String name) {
         String production = getRandomNumber();
         logger.info("getPubblicationsByName("+name+"): " + production);

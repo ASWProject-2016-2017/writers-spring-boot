@@ -15,14 +15,14 @@ public class WriterController {
     @Autowired 
     private ProductionService productionService;
 
-    @RequestMapping("/writer/{name}/{year}")
+    @RequestMapping("/{name}/{year}")
     public String getWriterByNameAndYear(@PathVariable String name,@PathVariable int year) {
         String writer = "Lo scrittore" + " " + name.substring(0,1).toUpperCase() + name.substring(1) + " è famoso per "+ masterpieceService.getMasterpieceByName(name) +
         " e nel " + year + " ha realizzato " + productionService.getProductionByNameAndYear(name, year) + " opere." ;
         logger.info("getWriterByNameAndYear(): " + writer);
         return writer;
     }
-    @RequestMapping("/writer/{name}")
+    @RequestMapping("/{name}")
     public String getWriterByName(@PathVariable String name) {
         String writer = "Lo scrittore" + " " + name.substring(0,1).toUpperCase() + name.substring(1) + " è famoso per "+ masterpieceService.getMasterpieceByName(name) +
         " e nella sua vita ha realizzato " + productionService.getProductionByName(name) + " opere." ;

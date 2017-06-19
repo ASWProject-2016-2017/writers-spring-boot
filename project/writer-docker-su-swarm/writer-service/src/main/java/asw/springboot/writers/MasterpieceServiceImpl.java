@@ -13,9 +13,8 @@ public class MasterpieceServiceImpl implements MasterpieceService{
 	public String getMasterpieceByName(String author){
 		return masterpieceClient.getMasterpieceByName(author);
 	}
-	public String getFallbackMasterpieceByName() {
-		return "Someone does something"; 
+	public String getFallbackMasterpieceByName(String author) {
+		return "masterpiece doesn't work"; 
 	}
-
 
 }

@@ -13,15 +13,15 @@ public class ProductionServiceImpl implements ProductionService{
 	public String getProductionByName(String author){
 		return productionClient.getProductionByName(author);
 	}
-	public String getFallbackProductionByName() {
-		return "Someone does something"; 
+	public String getFallbackProductionByName(String author) {
+		return "production by name doesn't work"; 
 	}
 	@HystrixCommand(fallbackMethod="getFallbackProductionByNameAndYear")
 	public String getProductionByNameAndYear(String author,int year){
 		return productionClient.getProductionByNameAndYear(author,year);
 	}
-	public String getFallbackProductionByNameAndYear() {
-		return "Someone does something"; 
+	public String getFallbackProductionByNameAndYear(String author,int year) {
+		return "production by name and year doesn't work"; 
 	}
 
 }

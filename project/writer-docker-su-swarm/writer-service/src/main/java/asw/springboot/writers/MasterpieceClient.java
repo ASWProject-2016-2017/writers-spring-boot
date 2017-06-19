@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient("masterpiece")
 public interface MasterpieceClient {
 
-	@RequestMapping(value="/masterpiece/{author}", method=RequestMethod.GET)
+	@RequestMapping(value="/{author}", method=RequestMethod.GET)
 	public String getMasterpieceByName(@PathVariable(value = "author") String author);
 
 }
