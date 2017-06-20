@@ -1,4 +1,4 @@
-package asw.springboot.writers;
+package asw.springboot.writers.service;
 
 public interface ProductionService {
 	public String getProductionByName(String author);

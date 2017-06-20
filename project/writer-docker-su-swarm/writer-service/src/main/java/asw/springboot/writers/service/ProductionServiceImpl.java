@@ -1,4 +1,4 @@
-package asw.springboot.writers;
+package asw.springboot.writers.service;
 
 import asw.springboot.writers.client.ProductionClient;
 import org.springframework.stereotype.Service;
