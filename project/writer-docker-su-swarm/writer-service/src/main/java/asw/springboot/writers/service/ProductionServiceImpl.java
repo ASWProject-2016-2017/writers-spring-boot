@@ -1,5 +1,6 @@
 package asw.springboot.writers;
 
+import asw.springboot.writers.client.ProductionClient;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;

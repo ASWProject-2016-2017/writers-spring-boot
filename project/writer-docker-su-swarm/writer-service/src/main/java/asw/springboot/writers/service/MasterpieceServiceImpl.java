@@ -1,8 +1,10 @@
-package asw.springboot.writers;
+package asw.springboot.writers.service;
 
+import asw.springboot.writers.client.MasterpieceClient;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+
 
 @Service
 public class MasterpieceServiceImpl implements MasterpieceService{
