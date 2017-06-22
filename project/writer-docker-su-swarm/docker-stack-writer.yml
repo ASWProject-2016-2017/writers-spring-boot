@@ -1,7 +1,7 @@
 version: '3'
 services:
   eureka:
-    image: swarm.inf.uniroma3.it:5000/eureka-server-9014
+    image: swarm.inf.uniroma3.it:5000/eureka-server-img-9014
 #    container_name: eureka 
 #    ports:
 #    - "8761:8761"
@@ -9,7 +9,7 @@ services:
       placement:
         constraints: [node.role == manager]
   masterpiece:
-    image: swarm.inf.uniroma3.it:5000/masterpiece-9014
+    image: swarm.inf.uniroma3.it:5000/masterpiece-img-9014
 #    ports: 
 #    - "8080"
     depends_on:
@@ -18,7 +18,7 @@ services:
       mode: replicated
       replicas: 1    
   production:
-    image: swarm.inf.uniroma3.it:5000/production-9014
+    image: swarm.inf.uniroma3.it:5000/production-img-9014
 #    ports: 
 #    - "8080"
     depends_on:
@@ -27,7 +27,7 @@ services:
       mode: replicated
       replicas: 1       
   writer:
-    image: swarm.inf.uniroma3.it:5000/writer-9014
+    image: swarm.inf.uniroma3.it:5000/writer-img-9014
 #    ports: 
 #    - "8080"
     depends_on:
@@ -36,7 +36,7 @@ services:
       mode: replicated
       replicas: 2    
   zuul:
-    image: swarm.inf.uniroma3.it:5000/writer-zuul-9014
+    image: swarm.inf.uniroma3.it:5000/writer-zuul-img-9014
 #    container_name: zuul 
     depends_on:
     - "eureka"
