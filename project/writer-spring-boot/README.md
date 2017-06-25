@@ -12,6 +12,6 @@ Per compilare l'applicazione fare quanto segue, dalla cartella corrente:
 
 ## Esecuzione
 Per eseguire l'applicazione fare quanto segue, in terminali diversi:
-* posizionarsi nella cartella springboot-writers ed eseguire lo script `./run-writers.sh`
-* posizionarsi nella cartella springboot-masterpieces ed eseguire lo script `./run-masterpieces.sh`
-* posizionarsi nella cartella springboot-productions ed eseguire lo script `./run-productions.sh`
+* posizionarsi nella cartella springboot-writer ed eseguire lo script `./run-writers.sh`
+* posizionarsi nella cartella springboot-masterpiece ed eseguire lo script `./run-masterpieces.sh`
+* posizionarsi nella cartella springboot-production ed eseguire lo script `./run-productions.sh`
