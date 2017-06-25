@@ -1,5 +1,10 @@
 # Descrizione del dominio applicativo
 
+## Progetti
+
+* **writer-spring-boot** è il primo progetto che deve essere mandato in esecuzione sul proprio calcolatore
+* **writer-docker-su-swarm** è il secondo progetto in esecuzione sullo swarm `swarm.inf.uniroma3.it`
+
 Il servizio principale `writer` fornisce informazioni (casuali) sugli scrittori
 
 Il servizio writer fornisce due operazioni:
@@ -35,3 +40,6 @@ Ad esempio,
 * la richiesta `/production/dante` potrebbe restituire “19”
 
 Il servizio `writer` risponde al suo client usufruendo dei servizi `masterpiece` e `production` e integrando le loro risposte.
+
+
+
