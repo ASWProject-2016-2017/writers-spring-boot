@@ -5,7 +5,9 @@
 * **writer-spring-boot** è il primo progetto che deve essere mandato in esecuzione sul proprio calcolatore
 * **writer-docker-su-swarm** è il secondo progetto in esecuzione sullo swarm `swarm.inf.uniroma3.it`
 
-Il servizio principale `writer` fornisce informazioni (casuali) sugli scrittori
+## Dominio applicativo
+
+Il servizio principale `writer` fornisce informazioni (casuali) sugli scrittori.
 
 Il servizio writer fornisce due operazioni:
 * `/writer/<scrittore>/<anno>` restituisce informazioni (casuali) per il quale un certo `<scrittore>` è
