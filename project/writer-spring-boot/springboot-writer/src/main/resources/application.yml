@@ -1,0 +1,11 @@
+spring:
+    application:
+        name: writer
+masterpiece:
+ uri: http://localhost:8081
+ path: /masterpiece
+production:
+ uri: http://localhost:8082
+ path: /production
+server:
+  port: 8080
